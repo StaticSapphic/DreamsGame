@@ -6,19 +6,27 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
 
+    [Header("Movement Speeds")]
     public float VerticalSpeed;
     public float HorizontalSpeed;
 
+    [Header("Mouse Movement")]
     [Space]
     public float MouseXSensitivity;
     public float MouseYSenstivity;
 
-    private Camera camera;
-    private float CameraPitch;
-
     [Space]
     public float upLimit;
     public float downLimit;
+
+    [Header("Running")]
+    public bool CanRun = false;
+    public KeyCode runKey;
+    public float RunSpeed;
+
+
+    private Camera camera;
+    private float CameraPitch;
 
 
     // Start is called before the first frame update
@@ -33,8 +41,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        controller.SimpleMove(transform.TransformDirection( new Vector3(Input.GetAxis("Horizontal") * HorizontalSpeed, 0, Input.GetAxis("Vertical") * VerticalSpeed) ));
-        transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X")*MouseXSensitivity, 0));
+        controller.SimpleMove(transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal") * HorizontalSpeed, 0, Input.GetAxis("Vertical") * (CanRun && Input.GetKey(runKey)? RunSpeed: VerticalSpeed))));
+
+        transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * MouseXSensitivity, 0));
 
         CameraPitch += Input.GetAxis("Mouse Y") * -MouseYSenstivity;
         CameraPitch = Mathf.Clamp(CameraPitch, -downLimit, upLimit);
