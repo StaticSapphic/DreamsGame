@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
+    public Mesh editorMesh;
 
     [Header("Movement Speeds")]
     public float VerticalSpeed;
@@ -48,5 +49,12 @@ public class PlayerController : MonoBehaviour
         CameraPitch += Input.GetAxis("Mouse Y") * -MouseYSenstivity;
         CameraPitch = Mathf.Clamp(CameraPitch, -downLimit, upLimit);
         camera.transform.eulerAngles = new Vector3(CameraPitch, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
+    }
+
+    void OnDrawGizmos()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireMesh(editorMesh, transform.position, transform.rotation, transform.localScale);
     }
 }
