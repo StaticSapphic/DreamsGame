@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
     public KeyCode runKey;
     public float RunSpeed;
 
+    [Header("Enablers")]
+    public bool CanLook = true;
+    public bool CanMove = true;
+
 
     private Camera camera;
     private float CameraPitch;
@@ -42,18 +46,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        controller.SimpleMove(transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal") * HorizontalSpeed, 0, Input.GetAxis("Vertical") * (CanRun && Input.GetKey(runKey)? RunSpeed: VerticalSpeed))));
+        if (CanMove)
+        {
+            controller.SimpleMove(transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal") * HorizontalSpeed, 0, Input.GetAxis("Vertical") * (CanRun && Input.GetKey(runKey) ? RunSpeed : VerticalSpeed))));
+        }
 
-        transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * MouseXSensitivity, 0));
+        if (CanLook)
+        {
+            transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * MouseXSensitivity, 0));
 
-        CameraPitch += Input.GetAxis("Mouse Y") * -MouseYSenstivity;
-        CameraPitch = Mathf.Clamp(CameraPitch, -downLimit, upLimit);
-        camera.transform.eulerAngles = new Vector3(CameraPitch, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
+            CameraPitch += Input.GetAxis("Mouse Y") * -MouseYSenstivity;
+            CameraPitch = Mathf.Clamp(CameraPitch, -downLimit, upLimit);
+            camera.transform.eulerAngles = new Vector3(CameraPitch, camera.transform.eulerAngles.y, camera.transform.eulerAngles.z);
+        }
     }
 
     void OnDrawGizmos()
     {
-        // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.green;
         Gizmos.DrawWireMesh(editorMesh, transform.position, transform.rotation, transform.localScale);
     }
