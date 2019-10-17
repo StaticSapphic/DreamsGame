@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CorridorController : MonoBehaviour
+public class Teleporter: MonoBehaviour
 {
     public GameObject Player;
     public Vector3 Offset;
@@ -14,7 +14,7 @@ public class CorridorController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        other.transform.Translate(Offset);
+        other.transform.Translate(other.transform.InverseTransformDirection(Offset));
         //other.GetComponent<PlayerTranslater>().Teleport(other.transform.position + Offset);
         Debug.Log(other.transform.position);
         Debug.Log("Teleported!");
