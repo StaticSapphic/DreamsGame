@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    public KeyCode InteractKey;
+    public float Reach;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,15 +14,14 @@ public class Interact : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(transform.position, transform.forward * 3000, Color.green);
+        Debug.DrawRay(transform.position, transform.forward * Reach, Color.green);
 
-        if (Input.GetKeyDown(InteractKey))
+        if (Input.GetButtonDown("Interact"))
         {
             RaycastHit hit;
             // Does the ray intersect any objects excluding the player layer
-            if (Physics.Raycast(transform.position, transform.forward, out hit))
-            {
-                
+            if (Physics.Raycast(transform.position, transform.forward, out hit, Reach))
+            {                
                 hit.collider.GetComponent<Interactable>()?.Interact();
             }
         }

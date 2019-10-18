@@ -31,6 +31,7 @@ public class TVscreen : MonoBehaviour
             }
         }
 
+        screenImage.filterMode = FilterMode.Point;
         screenImage.Apply();
 
         rend = GetComponent<MeshRenderer>();
