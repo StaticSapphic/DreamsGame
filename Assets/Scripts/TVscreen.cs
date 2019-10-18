@@ -15,6 +15,11 @@ public class TVscreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //GenerateImage();
+    }
+
+    public void GenerateImage()
+    {
         screenImage = new Texture2D(resX, resY, TextureFormat.ARGB32, false);
 
         for (int x = 0; x < 1280; x++)
