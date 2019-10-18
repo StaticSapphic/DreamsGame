@@ -44,7 +44,15 @@ public class TVscreen : MonoBehaviour
     {
         if (move)
         {
-            rend.material.mainTextureOffset = new Vector2(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
+            try
+            {
+                rend.material.mainTextureOffset = new Vector2(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
+            }
+            catch (System.Exception)
+            {
+                //just ignore or smth
+            }
+            
         }
     }
 }

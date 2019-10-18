@@ -92,8 +92,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenImage: {fileID: 0}
   move: 1
-  resX: 640
-  resY: 480
+  resX: 720
+  resY: 576
 --- !u!1 &6428165549564415022
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b6261ae921c300147b27da5763a01e7d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

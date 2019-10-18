@@ -21,13 +21,13 @@ public class PlayerController : MonoBehaviour
     public float downLimit;
 
     [Header("Running")]
-    public bool CanRun = false;
     public KeyCode runKey;
     public float RunSpeed;
 
     [Header("Enablers")]
     public bool CanLook = true;
-    public bool CanMove = true;
+    public bool CanMove = true;    
+    public bool CanRun = false;
 
 
     private Camera camera;

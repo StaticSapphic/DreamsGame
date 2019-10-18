@@ -12,7 +12,6 @@ public class Pickup : Interactable
 
     public override void Interact()
     {
-        Debug.Log("Picked Up");
         if (!Held)
         {
             GetComponent<Rigidbody>().isKinematic = true;
