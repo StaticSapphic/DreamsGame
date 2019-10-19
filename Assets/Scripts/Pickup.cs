@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(AudioSource))]
 public class Pickup : Interactable
 {
-    public float holdDistance = 3;
+    public float holdDistance = 1;
     private bool Held;
     public GameObject camera;
 
@@ -41,5 +42,10 @@ public class Pickup : Interactable
                 camera.GetComponentInParent<PlayerController>().CanLook = true;
             }
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        GetComponent<AudioSource>().Play();
     }
 }
