@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(AudioSource))]
 public class Pickup : Interactable
 {
     public float holdDistance = 1;
     private bool Held;
     public GameObject camera;
+    [Header("Inspection Messages")]
+    public GameObject MessageHolder;
+    public string[] InspectMessages;
+    public float messageLength = 3;
 
     public override void Interact()
     {
@@ -17,6 +20,11 @@ public class Pickup : Interactable
         {
             GetComponent<Rigidbody>().isKinematic = true;
             GetComponent<Rigidbody>().useGravity = false;
+
+            if (InspectMessages.Length > 0)
+            {
+                MessageHolder.GetComponent<Messages>().ShowText(InspectMessages[Random.Range(0, InspectMessages.Length)], messageLength);
+            }
         }
         else
         {
@@ -35,17 +43,12 @@ public class Pickup : Interactable
             if (Input.GetAxis("Fire3") == 1)
             {
                 camera.GetComponentInParent<PlayerController>().CanLook = false;
-                transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")));
+                transform.Rotate(new Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0));
             }
             else
             {
                 camera.GetComponentInParent<PlayerController>().CanLook = true;
             }
         }
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        GetComponent<AudioSource>().Play();
     }
 }

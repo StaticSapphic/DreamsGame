@@ -12,7 +12,6 @@ public class SwitchInteract : Interactable
     public AudioSource Noise;
     public override void Interact()
     {
-        Debug.Log("Toggled Light");
         if (LightOn)
         {
             Noise.Play();

@@ -4,39 +4,19 @@ using UnityEngine;
 
 public class Examine : Interactable
 {
-    private Vector3 OriginalPosition;
-    private Quaternion OriginalRotation;
-    public float holdDistance = 3;
-    private bool Held;
-    public GameObject camera;
+    public GameObject MessageHolder;
+    public string[] InspectMessages;
+    public float messageLength = 3;
 
     public override void Interact()
     {
-        if (!Held)
+        if (InspectMessages.Length > 0)
         {
-            GetComponent<Rigidbody>().isKinematic = true;
-            OriginalPosition = transform.position;
-            OriginalRotation = transform.rotation;
-            camera.GetComponentInParent<PlayerController>().CanMove = false;
-            camera.GetComponentInParent<PlayerController>().CanLook = false;
+            MessageHolder.GetComponent<Messages>().ShowText(InspectMessages[Random.Range(0, InspectMessages.Length)], messageLength);
         }
-        else
+        if (GetComponent<AudioSource>() != null)
         {
-            GetComponent<Rigidbody>().isKinematic = false;
-            transform.position = OriginalPosition;
-            transform.rotation = OriginalRotation;
-            camera.GetComponentInParent<PlayerController>().CanMove = true;
-            camera.GetComponentInParent<PlayerController>().CanLook = true;
-        }
-        Held = !Held;
-    }
-
-    void Update()
-    {
-        if (Held)
-        {
-            transform.position = camera.transform.position + (camera.transform.forward * holdDistance);
-            transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")));
+            GetComponent<AudioSource>().Play();
         }
     }
 }
