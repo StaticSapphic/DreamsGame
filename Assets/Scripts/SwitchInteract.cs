@@ -5,30 +5,22 @@ using UnityEngine;
 public class SwitchInteract : Interactable
 {
     public Light roomLight;
-    public GameObject switchOn;
-    public GameObject switchOff;
     public bool LightOn = true;
-
-    public AudioSource Noise;
     public override void Interact()
     {
         if (LightOn)
         {
-            Noise.Play();
+            GetComponent<AudioSource>().Play();
             roomLight.intensity = 0.1f;
-            switchOn.SetActive(false);
-            switchOff.SetActive(true);
-            switchOff.GetComponent<SwitchInteract>().LightOn = false;
-            
+            gameObject.transform.localScale = new Vector3(1,-1, 1);
+
 
         }
         else
         {
-            Noise.Play();
+            GetComponent<AudioSource>().Play();
             roomLight.intensity = 1.0f;
-            switchOn.SetActive(true);
-            switchOff.SetActive(false);
-            switchOn.GetComponent<SwitchInteract>().LightOn = true;
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
             
         }
         LightOn = !LightOn;

@@ -7,7 +7,6 @@ public class Examine : Interactable
     public GameObject MessageHolder;
     public string[] InspectMessages;
     public float messageLength = 3;
-    public GameObject RealObject;
 
     public override void Interact()
     {
@@ -19,13 +18,11 @@ public class Examine : Interactable
         {
             GetComponent<AudioSource>().Play();
         }
-        if (RealObject != null)
+        if (GetComponent<Animation>() != null)
         {
-            if (RealObject.GetComponent<Animation>() != null)
-            {
-                RealObject.GetComponent<Animation>().Play();
-            }
+            GetComponent<Animation>().Play();
         }
+        
         
     }
 }

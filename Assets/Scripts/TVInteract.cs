@@ -11,20 +11,20 @@ public class TVInteract : Interactable
     // Start is called before the first frame update
     void Start()
     {
-        GetComponentInChildren<TVscreen>().gameObject.GetComponent<MeshRenderer>().material.SetTexture("_MainTex", Black);
+        GetComponent<MeshRenderer>().materials[1].SetTexture("_MainTex", Black);
     }
 
     public override void Interact()
     {
         if (on)
         {
-            GetComponentInChildren<TVscreen>().gameObject.GetComponent<MeshRenderer>().material.SetTexture("_MainTex", Black);
-            GetComponentInChildren<AudioSource>().Stop();
+            GetComponent<MeshRenderer>().materials[1].SetTexture("_MainTex", Black);
+            GetComponent<AudioSource>().Stop();
         }
         else
         {
-            GetComponentInChildren<TVscreen>().GenerateImage();
-            GetComponentInChildren<AudioSource>().Play();
+            GetComponent<TVscreen>().GenerateImage();
+            GetComponent<AudioSource>().Play();
         }
         
         on = !on;

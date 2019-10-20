@@ -35,9 +35,8 @@ public class TVscreen : MonoBehaviour
         screenImage.Apply();
 
         rend = GetComponent<MeshRenderer>();
-        Material material = new Material(Shader.Find("Standard"));
-        material.SetTexture("_MainTex", screenImage);
-        rend.material = material;
+        GetComponent<MeshRenderer>().materials[1].SetTexture("_MainTex", screenImage);
+        GetComponent<MeshRenderer>().materials[1].SetFloat("_Glossiness", .9f);
     }
 
     // Update is called once per frame
@@ -47,7 +46,8 @@ public class TVscreen : MonoBehaviour
         {
             try
             {
-                rend.material.mainTextureOffset = new Vector2(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
+                rend.materials[1].mainTextureOffset = new Vector2(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
+                //mat.mainTextureOffset = new Vector2(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
             }
             catch (System.Exception)
             {
