@@ -6,6 +6,7 @@ public class TVInteract : Interactable
 {
     public Texture2D Black;
     public bool on;
+    public GameObject Light;
     
 
     // Start is called before the first frame update
@@ -20,11 +21,13 @@ public class TVInteract : Interactable
         {
             GetComponent<MeshRenderer>().materials[1].SetTexture("_MainTex", Black);
             GetComponent<AudioSource>().Stop();
+            Light.SetActive(false);
         }
         else
         {
             GetComponent<TVscreen>().GenerateImage();
             GetComponent<AudioSource>().Play();
+            Light.SetActive(true);
         }
         
         on = !on;

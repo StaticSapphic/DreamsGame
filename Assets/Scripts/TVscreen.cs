@@ -36,7 +36,6 @@ public class TVscreen : MonoBehaviour
 
         rend = GetComponent<MeshRenderer>();
         GetComponent<MeshRenderer>().materials[1].SetTexture("_MainTex", screenImage);
-        GetComponent<MeshRenderer>().materials[1].SetFloat("_Glossiness", .9f);
     }
 
     // Update is called once per frame
