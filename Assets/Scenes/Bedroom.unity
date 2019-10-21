@@ -779,7 +779,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495684239}
   m_LocalRotation: {x: 0.49999994, y: -0.49999994, z: 0.4999986, w: 0.5000015}
-  m_LocalPosition: {x: 0, y: 0, z: -1.62}
+  m_LocalPosition: {x: 0, y: 0, z: -1.5861}
   m_LocalScale: {x: 0.0018272402, y: 0.0018272402, z: 0.0018272402}
   m_Children:
   - {fileID: 746783800}
@@ -788,8 +788,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 90.00001}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -4.22, y: 2.891}
-  m_SizeDelta: {x: 1093, y: 615}
+  m_AnchoredPosition: {x: -4.0951, y: 2.891}
+  m_SizeDelta: {x: 1185.6968, y: 478.2728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &508728097 stripped
 GameObject:
@@ -1686,8 +1686,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -1.7, y: 2.5}
+  m_SizeDelta: {x: 157.3, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746783801
 MonoBehaviour:
@@ -1709,7 +1709,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "#7582 \u2665"
+  m_text: '#7582<3'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1780,12 +1780,12 @@ MonoBehaviour:
     textComponent: {fileID: 746783801}
     characterCount: 7
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 0
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
