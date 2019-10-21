@@ -19,7 +19,7 @@ public class Interact : MonoBehaviour
         if (Input.GetButtonDown("Interact"))
         {
             RaycastHit hit;
-            // Does the ray intersect any objects excluding the player layer
+            // Does the ray intersect any objects
             if (Physics.Raycast(transform.position, transform.forward, out hit, Reach))
             {                
                 hit.collider.GetComponent<Interactable>()?.Interact();

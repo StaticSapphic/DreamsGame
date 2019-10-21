@@ -2169,6 +2169,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room
       objectReference: {fileID: 0}
+    - target: {fileID: 416345478665026047, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 416345478665026035, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 416345478665025951, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 416345478665025949, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 416345478665025947, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 416345478665025943, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 416345478665025941, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 416345478665025923, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 416345478665119145, guid: c34a4b1227eef1a42a4a3a6e00ef6916,
         type: 3}
       propertyPath: m_LocalPosition.x
