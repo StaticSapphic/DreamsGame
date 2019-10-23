@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class credits : MonoBehaviour
 {
@@ -12,10 +13,24 @@ public class credits : MonoBehaviour
     }
     void Update()
     {
-        if (position.position.y < 790)
+        if (position.position.y < 1100)
         {
             position.position -= new Vector3(0, -speed, 0);
         }
+        else
+        {
+            StartCoroutine(LoadYourAsyncScene());
+        }
         
+    }
+
+    IEnumerator LoadYourAsyncScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Bedroom");
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }
