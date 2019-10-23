@@ -27,6 +27,8 @@ public class Ending : MonoBehaviour
                 player.GetComponent<Rigidbody>().useGravity = false;
                 player.GetComponent<Rigidbody>().isKinematic = false;
                 player.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                player.GetComponent<PlayerController>().CanLook = false;
+                player.GetComponentInChildren<Camera>().gameObject.transform.LookAt(Vector3.down);
                 credits.SetActive(true);
                 HUD.SetActive(false);
             }
