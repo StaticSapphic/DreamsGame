@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
+
 public class ShowAudioVolume : MonoBehaviour
 {
     public AudioSource audioSource;
@@ -17,7 +17,7 @@ public class ShowAudioVolume : MonoBehaviour
 
     void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
         clipSampleData = new float[sampleDataLength];
     }
 
