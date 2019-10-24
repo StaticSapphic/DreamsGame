@@ -49,6 +49,7 @@ ModelImporter:
     100086: Wardrobe (WIP)
     100088: Wardrobe Door Left
     100090: Wardrobe Door Right
+    100092: playmat.001
     400000: BedsideLamp
     400002: Bin
     400004: Book
@@ -95,6 +96,7 @@ ModelImporter:
     400086: Wardrobe (WIP)
     400088: Wardrobe Door Left
     400090: Wardrobe Door Right
+    400092: playmat.001
     2100000: Sideboard
     2100002: Doorframe
     2100004: Floor
@@ -116,6 +118,12 @@ ModelImporter:
     2100036: lambert1.002
     2100038: Rubber
     2100040: UV Unwrap
+    2100042: Box
+    2100044: TestingMat.001
+    2100046: Cardboard
+    2100048: Glue
+    2100050: Cup
+    2100052: GlueTube
     2300000: BedsideLamp
     2300002: Bin
     2300004: Book
@@ -159,6 +167,7 @@ ModelImporter:
     2300080: Wardrobe (WIP)
     2300082: Wardrobe Door Left
     2300084: Wardrobe Door Right
+    2300086: playmat.001
     3300000: BedsideLamp
     3300002: Bin
     3300004: Book
@@ -202,6 +211,7 @@ ModelImporter:
     3300080: Wardrobe (WIP)
     3300082: Wardrobe Door Left
     3300084: Wardrobe Door Right
+    3300086: playmat.001
     4300000: ROOM
     4300002: Switch TV
     4300004: Door
@@ -245,6 +255,7 @@ ModelImporter:
     4300080: pCube44
     4300082: polySurface27
     4300084: playmat
+    4300086: playmat.001
     10800000: Point
     10800002: Point.001
     2186277476908879412: ImportLogs
