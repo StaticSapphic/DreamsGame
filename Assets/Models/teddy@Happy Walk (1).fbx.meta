@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2ad89e11864b874e83973617a2f9639
+guid: 7c5cbbc5c479f2c4abb133d2d660c1b7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -13,25 +13,33 @@ ModelImporter:
     100014: mixamorig:LeftFoot
     100016: mixamorig:LeftForeArm
     100018: mixamorig:LeftHand
-    100020: mixamorig:LeftLeg
-    100022: mixamorig:LeftShoulder
-    100024: mixamorig:LeftToe_End
-    100026: mixamorig:LeftToeBase
-    100028: mixamorig:LeftUpLeg
-    100030: mixamorig:Neck
-    100032: mixamorig:RightArm
-    100034: mixamorig:RightFoot
-    100036: mixamorig:RightForeArm
-    100038: mixamorig:RightHand
-    100040: mixamorig:RightLeg
-    100042: mixamorig:RightShoulder
-    100044: mixamorig:RightToe_End
-    100046: mixamorig:RightToeBase
-    100048: mixamorig:RightUpLeg
-    100050: mixamorig:Spine
-    100052: mixamorig:Spine1
-    100054: mixamorig:Spine2
-    100056: //RootNode
+    100020: mixamorig:LeftHandIndex1
+    100022: mixamorig:LeftHandIndex2
+    100024: mixamorig:LeftHandIndex3
+    100026: mixamorig:LeftHandIndex4
+    100028: mixamorig:LeftLeg
+    100030: mixamorig:LeftShoulder
+    100032: mixamorig:LeftToe_End
+    100034: mixamorig:LeftToeBase
+    100036: mixamorig:LeftUpLeg
+    100038: mixamorig:Neck
+    100040: mixamorig:RightArm
+    100042: mixamorig:RightFoot
+    100044: mixamorig:RightForeArm
+    100046: mixamorig:RightHand
+    100048: mixamorig:RightHandIndex1
+    100050: mixamorig:RightHandIndex2
+    100052: mixamorig:RightHandIndex3
+    100054: mixamorig:RightHandIndex4
+    100056: mixamorig:RightLeg
+    100058: mixamorig:RightShoulder
+    100060: mixamorig:RightToe_End
+    100062: mixamorig:RightToeBase
+    100064: mixamorig:RightUpLeg
+    100066: mixamorig:Spine
+    100068: mixamorig:Spine1
+    100070: mixamorig:Spine2
+    100072: //RootNode
     400000: BrownTeddybear
     400002: brownTeddyBearGeo
     400004: default
@@ -42,32 +50,40 @@ ModelImporter:
     400014: mixamorig:LeftFoot
     400016: mixamorig:LeftForeArm
     400018: mixamorig:LeftHand
-    400020: mixamorig:LeftLeg
-    400022: mixamorig:LeftShoulder
-    400024: mixamorig:LeftToe_End
-    400026: mixamorig:LeftToeBase
-    400028: mixamorig:LeftUpLeg
-    400030: mixamorig:Neck
-    400032: mixamorig:RightArm
-    400034: mixamorig:RightFoot
-    400036: mixamorig:RightForeArm
-    400038: mixamorig:RightHand
-    400040: mixamorig:RightLeg
-    400042: mixamorig:RightShoulder
-    400044: mixamorig:RightToe_End
-    400046: mixamorig:RightToeBase
-    400048: mixamorig:RightUpLeg
-    400050: mixamorig:Spine
-    400052: mixamorig:Spine1
-    400054: mixamorig:Spine2
-    400056: //RootNode
+    400020: mixamorig:LeftHandIndex1
+    400022: mixamorig:LeftHandIndex2
+    400024: mixamorig:LeftHandIndex3
+    400026: mixamorig:LeftHandIndex4
+    400028: mixamorig:LeftLeg
+    400030: mixamorig:LeftShoulder
+    400032: mixamorig:LeftToe_End
+    400034: mixamorig:LeftToeBase
+    400036: mixamorig:LeftUpLeg
+    400038: mixamorig:Neck
+    400040: mixamorig:RightArm
+    400042: mixamorig:RightFoot
+    400044: mixamorig:RightForeArm
+    400046: mixamorig:RightHand
+    400048: mixamorig:RightHandIndex1
+    400050: mixamorig:RightHandIndex2
+    400052: mixamorig:RightHandIndex3
+    400054: mixamorig:RightHandIndex4
+    400056: mixamorig:RightLeg
+    400058: mixamorig:RightShoulder
+    400060: mixamorig:RightToe_End
+    400062: mixamorig:RightToeBase
+    400064: mixamorig:RightUpLeg
+    400066: mixamorig:Spine
+    400068: mixamorig:Spine1
+    400070: mixamorig:Spine2
+    400072: //RootNode
     2100000: No Name
     2300000: default
     3300000: default
     4300000: default
     4300002: BrownTeddybear
     4300004: brownTeddyBearGeo
-    7400000: mixamo.com
+    7400000: Happy Walk (1)
     9500000: //RootNode
     13700000: BrownTeddybear
     13700002: brownTeddyBearGeo
@@ -99,7 +115,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Happy Walk (1)
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 81
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
