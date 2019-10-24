@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: 6a936a2f3d33f0742a66e95a715dcce9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BedsideLamp
+    100002: Bin
+    100004: Book
+    100006: Book Pile 2
+    100008: Bookshelf
+    100010: Box Bottom
+    100012: Box Top
+    100014: Cabinet
+    100016: Cabinet2
+    100018: CeilingLamp
+    100020: Door
+    100022: Door Handle
+    100024: Doug
+    100026: //RootNode
+    100028: Duck
+    100030: Empty Case
+    100032: Empty Case Cover
+    100034: Octopus
+    100036: Old  tv cabinet
+    100038: pCube44
+    100040: Pirate Ship
+    100042: playmat
+    100044: Point
+    100046: Point.001
+    100048: polySurface11
+    100050: polySurface13
+    100052: polySurface16
+    100054: polySurface18
+    100056: polySurface20
+    100058: polySurface22
+    100060: polySurface24
+    100062: polySurface27
+    100064: polySurface3
+    100066: polySurface5
+    100068: polySurface7
+    100070: polySurface9
+    100072: pPlane3
+    100074: ROOM
+    100076: Switch Light
+    100078: Switch TV
+    100080: TV
+    100082: TV Plug
+    100084: VHS Pile 1
+    100086: Wardrobe (WIP)
+    100088: Wardrobe Door Left
+    100090: Wardrobe Door Right
+    400000: BedsideLamp
+    400002: Bin
+    400004: Book
+    400006: Book Pile 2
+    400008: Bookshelf
+    400010: Box Bottom
+    400012: Box Top
+    400014: Cabinet
+    400016: Cabinet2
+    400018: CeilingLamp
+    400020: Door
+    400022: Door Handle
+    400024: Doug
+    400026: //RootNode
+    400028: Duck
+    400030: Empty Case
+    400032: Empty Case Cover
+    400034: Octopus
+    400036: Old  tv cabinet
+    400038: pCube44
+    400040: Pirate Ship
+    400042: playmat
+    400044: Point
+    400046: Point.001
+    400048: polySurface11
+    400050: polySurface13
+    400052: polySurface16
+    400054: polySurface18
+    400056: polySurface20
+    400058: polySurface22
+    400060: polySurface24
+    400062: polySurface27
+    400064: polySurface3
+    400066: polySurface5
+    400068: polySurface7
+    400070: polySurface9
+    400072: pPlane3
+    400074: ROOM
+    400076: Switch Light
+    400078: Switch TV
+    400080: TV
+    400082: TV Plug
+    400084: VHS Pile 1
+    400086: Wardrobe (WIP)
+    400088: Wardrobe Door Left
+    400090: Wardrobe Door Right
+    2100000: Sideboard
+    2100002: Doorframe
+    2100004: Floor
+    2100006: Ceiling
+    2100008: Walls
+    2100010: Switch
+    2100012: Windowframe
+    2100014: Radiator
+    2100016: Rug
+    2100018: Door
+    2100020: TestingMat
+    2100022: Scratched Paint.001
+    2100024: ProBuilderDefault
+    2100026: LampBody
+    2100028: Doug
+    2100030: TVScreen
+    2100032: DoorHandle
+    2100034: LampShade
+    2100036: lambert1.002
+    2100038: Rubber
+    2100040: UV Unwrap
+    2300000: BedsideLamp
+    2300002: Bin
+    2300004: Book
+    2300006: Book Pile 2
+    2300008: Bookshelf
+    2300010: Box Bottom
+    2300012: Box Top
+    2300014: Cabinet
+    2300016: Cabinet2
+    2300018: CeilingLamp
+    2300020: Door
+    2300022: Door Handle
+    2300024: Doug
+    2300026: Duck
+    2300028: Empty Case
+    2300030: Empty Case Cover
+    2300032: Octopus
+    2300034: Old  tv cabinet
+    2300036: pCube44
+    2300038: Pirate Ship
+    2300040: playmat
+    2300042: polySurface11
+    2300044: polySurface13
+    2300046: polySurface16
+    2300048: polySurface18
+    2300050: polySurface20
+    2300052: polySurface22
+    2300054: polySurface24
+    2300056: polySurface27
+    2300058: polySurface3
+    2300060: polySurface5
+    2300062: polySurface7
+    2300064: polySurface9
+    2300066: pPlane3
+    2300068: ROOM
+    2300070: Switch Light
+    2300072: Switch TV
+    2300074: TV
+    2300076: TV Plug
+    2300078: VHS Pile 1
+    2300080: Wardrobe (WIP)
+    2300082: Wardrobe Door Left
+    2300084: Wardrobe Door Right
+    3300000: BedsideLamp
+    3300002: Bin
+    3300004: Book
+    3300006: Book Pile 2
+    3300008: Bookshelf
+    3300010: Box Bottom
+    3300012: Box Top
+    3300014: Cabinet
+    3300016: Cabinet2
+    3300018: CeilingLamp
+    3300020: Door
+    3300022: Door Handle
+    3300024: Doug
+    3300026: Duck
+    3300028: Empty Case
+    3300030: Empty Case Cover
+    3300032: Octopus
+    3300034: Old  tv cabinet
+    3300036: pCube44
+    3300038: Pirate Ship
+    3300040: playmat
+    3300042: polySurface11
+    3300044: polySurface13
+    3300046: polySurface16
+    3300048: polySurface18
+    3300050: polySurface20
+    3300052: polySurface22
+    3300054: polySurface24
+    3300056: polySurface27
+    3300058: polySurface3
+    3300060: polySurface5
+    3300062: polySurface7
+    3300064: polySurface9
+    3300066: pPlane3
+    3300068: ROOM
+    3300070: Switch Light
+    3300072: Switch TV
+    3300074: TV
+    3300076: TV Plug
+    3300078: VHS Pile 1
+    3300080: Wardrobe (WIP)
+    3300082: Wardrobe Door Left
+    3300084: Wardrobe Door Right
+    4300000: ROOM
+    4300002: Switch TV
+    4300004: Door
+    4300006: Empty Case
+    4300008: VHS Pile 1
+    4300010: Switch Light
+    4300012: Bookshelf
+    4300014: Book Pile 2
+    4300016: Box Bottom
+    4300018: Box Top
+    4300020: Doug
+    4300022: Pirate Ship
+    4300024: Octopus
+    4300026: Bin
+    4300028: Cabinet
+    4300030: Wardrobe (WIP)
+    4300032: Cabinet2
+    4300034: TV
+    4300036: Old  tv cabinet
+    4300038: Door Handle
+    4300040: TV Plug
+    4300042: Wardrobe Door Left
+    4300044: Wardrobe Door Right
+    4300046: Empty Case Cover
+    4300048: Book
+    4300050: Duck
+    4300052: BedsideLamp
+    4300054: CeilingLamp
+    4300056: pPlane3
+    4300058: polySurface16
+    4300060: polySurface24
+    4300062: polySurface20
+    4300064: polySurface18
+    4300066: polySurface22
+    4300068: polySurface7
+    4300070: polySurface11
+    4300072: polySurface3
+    4300074: polySurface5
+    4300076: polySurface9
+    4300078: polySurface13
+    4300080: pCube44
+    4300082: polySurface27
+    4300084: playmat
+    10800000: Point
+    10800002: Point.001
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
