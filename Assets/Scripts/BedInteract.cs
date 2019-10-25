@@ -10,7 +10,7 @@ public class BedInteract : Interactable
 
     public override void Interact()
     {
-        EyesHolder.GetComponent<Eyes>().Close();
+        //EyesHolder.GetComponent<Eyes>().Close();
         StartCoroutine(LoadYourAsyncScene());
     }
 

@@ -3784,7 +3784,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 59.15
+  m_fontSize: 69.95
   m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7895,7 +7895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e6aa2746ec811f46a0bbafacfd0eb98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: Toilets
+  NextScene: Cardboard
   EyesHolder: {fileID: 830140874}
 --- !u!4 &3122810058394432897
 Transform:
