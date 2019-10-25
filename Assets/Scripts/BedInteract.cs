@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class BedInteract : Interactable
 {
     public string NextScene = "";
+    public GameObject EyesHolder;
 
     public override void Interact()
     {
+        EyesHolder.GetComponent<Eyes>().Close();
         StartCoroutine(LoadYourAsyncScene());
     }
 

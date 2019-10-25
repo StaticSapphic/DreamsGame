@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6946478894612865583}
   - component: {fileID: 388069161353524277}
   - component: {fileID: 3766805487487931104}
+  - component: {fileID: 3567173750351712371}
   m_Layer: 0
   m_Name: Toilet 1
   m_TagString: Untagged
@@ -160,6 +161,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plane: {fileID: 6137202630753281441}
+--- !u!65 &3567173750351712371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2665493922625198402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.8066018, z: 1}
+  m_Center: {x: 0, y: -0.10447562, z: 0}
 --- !u!1 &6137202630753281441
 GameObject:
   m_ObjectHideFlags: 0
