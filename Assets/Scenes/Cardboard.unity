@@ -1900,8 +1900,33 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1164289739}
+    - target: {fileID: 9109744935409734536, guid: c5d59bf6f3bd88f43bb1470f905567dd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a1d5e6600ab19844198f9abc37c0c51e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5d59bf6f3bd88f43bb1470f905567dd, type: 3}
+--- !u!1 &59089698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1436142303781365395, guid: c5d59bf6f3bd88f43bb1470f905567dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 59089697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &59089699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59089698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6aa2746ec811f46a0bbafacfd0eb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextScene: "Toilets\xED"
+  EyesHolder: {fileID: 78148517}
 --- !u!43 &62349760
 Mesh:
   m_ObjectHideFlags: 0
@@ -3081,6 +3106,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a670904eac9e5744a8f32899ce6b8475, type: 3}
+--- !u!1 &78148517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3400576150311099986, guid: a670904eac9e5744a8f32899ce6b8475,
+    type: 3}
+  m_PrefabInstance: {fileID: 78148516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &93869301
 Mesh:
   m_ObjectHideFlags: 0
@@ -22602,8 +22633,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Texture: {fileID: 2800000, guid: 30d50fdefd71aaf4fbbd17ba766a6101, type: 3}
   m_UVRect:
     serializedVersion: 2
@@ -22943,8 +22972,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Texture: {fileID: 2800000, guid: 30d50fdefd71aaf4fbbd17ba766a6101, type: 3}
   m_UVRect:
     serializedVersion: 2
@@ -25266,8 +25293,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: +
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -25296,7 +25321,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 71.3
+  m_fontSize: 66.25
   m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -26222,8 +26247,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -49162,7 +49185,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-62822
+  m_Name: pb_Mesh-132690
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
